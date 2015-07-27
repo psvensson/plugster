@@ -1,0 +1,31 @@
+{
+  "name": "plugster",
+  "version": "1.0.0",
+  "description": "module definition and message routing library for JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R nyan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psvensson/plugster.git"
+  },
+  "keywords": [
+    "wire",
+    "routing",
+    "message",
+    "javascript",
+    "coffeescript"
+  ],
+  "author": "Peter Svensson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/psvensson/plugster/issues"
+  },
+  "homepage": "https://github.com/psvensson/plugster",
+  "dependencies": {
+    "chai": "^3.2.0",
+    "node-promise": "^0.5.12",
+    "node-uuid": "^1.4.3"
+  }
+}

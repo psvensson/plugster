@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "plugster-spec.js",
+  "sourceRoot": "",
+  "sources": [
+    "plugster-spec.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA,gBAAA;;AAAA,EAAA,MAAA,GAAc,OAAA,CAAQ,MAAR,CAAe,CAAC,MAA9B,CAAA;;AAAA,EACA,QAAA,GAAc,OAAA,CAAQ,iBAAR,CADd,CAAA;;AAAA,EAGA,QAAA,CAAS,gBAAT,EAA2B,SAAA,GAAA;WAKzB,EAAA,CAAG,aAAH,EAAkB,SAAA,GAAA;aAChB,MAAA,CAAO,IAAP,CAAY,CAAC,EAAE,CAAC,KAAhB,CAAsB,IAAtB,EADgB;IAAA,CAAlB,EALyB;EAAA,CAA3B,CAHA,CAAA;AAAA"
+}

@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "Plugster.js",
+  "sourceRoot": "",
+  "sources": [
+    "Plugster.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA,uBAAA;;AAAA,EAAA,IAAA,GAAmB,OAAA,CAAQ,WAAR,CAAnB,CAAA;;AAAA,EACA,OAAA,GAAmB,OAAA,CAAQ,cAAR,CADnB,CAAA;;AAAA,EAGM;0BAAN;;oBAAA;;MAHA,CAAA;;AAAA,EAOA,MAAM,CAAC,OAAP,GAAiB,QAPjB,CAAA;AAAA"
+}
