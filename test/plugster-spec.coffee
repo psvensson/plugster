@@ -7,7 +7,9 @@ describe 'Plugster tests', ->
   foo = new Plugster(
     'foo',
       input:
-        i1: (msg) -> console.log 'input port 1 on Foo got message : '+msg
+        i1: (msg) ->
+          console.log 'input port 1 on Foo got message : '+msg
+          foo.send('o1', msg)
       output: ['o1']
   )
 
@@ -29,3 +31,7 @@ describe 'Plugster tests', ->
   it 'should be able to send a message between ports', () ->
     foo.send('o1', 'xyzzy')
     expect(bar.baz).to.equal('xyzzy')
+
+  it 'should be able to send directly to an input port', () ->
+    foo.sendDirectToInput('i1', 'quux')
+    expect(bar.baz).to.equal('quux')

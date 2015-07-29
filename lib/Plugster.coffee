@@ -6,7 +6,8 @@ class Plugster
   @modules = []
 
   # ports looks like: {input: {'name': function(), ..}, output: ['name1', 'name2',..}
-  constructor: (@name, ports) ->
+  # A module is static and stateless, but may affect state changes in the provided serviceModel
+  constructor: (@name, ports, @serviceModel) ->
     #console.log ' Plugster constructor'
     #console.dir ports
     @input = ports.input
@@ -35,5 +36,12 @@ class Plugster
     else
       console.log 'Plugster::send could find no connected input port function for module "'+wire.inputModuleName+'" port "'+wire.inputPortName
       return false
+
+  sendDirectToInput: (inputPortName, data) =>
+    iPort = @input[inputPortName]
+    if iPort
+      iPort(data)
+    else
+      console.log 'Plugster::sendDirectToInput no input function connected to name "'+inputPortName+'"'
 
 module.exports = Plugster
